@@ -1,0 +1,7 @@
+Ten trang: devesigns
+domain: devesigns.com
+dich vu: Thiet ke trang WP, shopify
+	 Code trang web theo yeu cau (thuong mai dien tu, tin tuc, 
+	 quan ly doanh nghiep)
+	 Thiet ke landing page gia re
+	 Lap trinh app android		

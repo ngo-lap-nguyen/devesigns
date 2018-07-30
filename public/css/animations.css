@@ -1,0 +1,153 @@
+/* Fade time: 0.7s */
+/* Animation duration = 0.7 + delay time */
+/* Start percentage = delay time / animation duration */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 50px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -50px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeOutUp {
+    from {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        opacity: 0;
+        transform: translate3d(0, -50px, 0);
+    }
+}
+
+@keyframes fadeOutDown {
+    from {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        opacity: 0;
+        transform: translate3d(0, 50px, 0);
+    }
+}
+
+@keyframes fadeInUp-delay-500 {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 50px, 0);
+    }
+    41.67% {
+        opacity: 0;
+        transform: translate3d(0, 50px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.section.active .fadeInUp-delay-500 {
+    animation-name: fadeInUp-delay-500;
+    animation-duration: 1.2s;
+}
+
+@keyframes fadeInUp-delay-800 {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 50px, 0);
+    }
+    53.33% {
+        opacity: 0;
+        transform: translate3d(0, 50px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.section.active .fadeInUp-delay-800 {
+    animation-name: fadeInUp-delay-800;
+    animation-duration: 1.5s;
+}
+
+@keyframes fadeInUp-delay-1100 {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 50px, 0);
+    }
+    61.11% {
+        opacity: 0;
+        transform: translate3d(0, 50px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.section.active .fadeInUp-delay-1100 {
+    animation-name: fadeInUp-delay-1100;
+    animation-duration: 1.8s;
+}
+
+@keyframes bouncingUp {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+        transform: translate3d(0, -10px, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.bouncingUp {
+    animation: bouncingUp 1.2s ease-in-out;
+}
+
+@keyframes bouncingDown {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+        transform: translate3d(0, 10px, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.bouncingDown {
+    animation: bouncingDown 1.2s ease-in-out;
+}
+
+.animation-infinite {
+    animation-iteration-count: infinite;
+}
+
+/* Intro carousel */
+.intro-carousel .intro-carousel-item.active.fadeInUp {
+    animation-name: fadeInUp;
+    animation-duration: 0.7s;
+}
+
+.intro-carousel .intro-carousel-item.active.fadeInDown {
+    animation-name: fadeInDown;
+    animation-duration: 0.7s;
+}
