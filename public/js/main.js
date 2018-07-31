@@ -13,16 +13,21 @@ $(document).ready(function () {
         onLeave: function(index, nextIndex, direction) {
             if (nextIndex == 1) {
                 $('.site-logo').toggleClass('active');
+                isAbout = true;
             }
 
             if (index == 1) {
                 $('.site-logo').toggleClass('active');
+                isAbout = false;
             }
         }
     });
 
-    setInterval(() => {
-        plusSlide(1);
+    var isAbout = true;
+    var introCarousel = setInterval(() => {
+        if (isAbout) {
+            plusSlide(1);
+        }
     }, 5000)
 });
 

@@ -105,6 +105,166 @@
     animation-duration: 1.8s;
 }
 
+@keyframes fadeInLeft-delay-500 {
+    0% {
+        opacity: 0;
+        transform: translate3d(-50px, 0, 0);
+    }
+    41.67% {
+        opacity: 0;
+        transform: translate3d(-50px, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.section.active .fadeInLeft-delay-500 {
+    animation-name: fadeInLeft-delay-500;
+    animation-duration: 1.2s;
+}
+
+@keyframes fadeInLeft-delay-800 {
+    0% {
+        opacity: 0;
+        transform: translate3d(-50px, 0, 0);
+    }
+    53.33% {
+        opacity: 0;
+        transform: translate3d(-50px, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.section.active .fadeInLeft-delay-800 {
+    animation-name: fadeInLeft-delay-800;
+    animation-duration: 1.5s;
+}
+
+@keyframes fadeInLeft-delay-1100 {
+    0% {
+        opacity: 0;
+        transform: translate3d(-50px, 0, 0);
+    }
+    61.11% {
+        opacity: 0;
+        transform: translate3d(-50px, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.section.active .fadeInLeft-delay-1100 {
+    animation-name: fadeInLeft-delay-1100;
+    animation-duration: 1.8s;
+}
+
+@keyframes fadeInLeft-delay-1400 {
+    0% {
+        opacity: 0;
+        transform: translate3d(-50px, 0, 0);
+    }
+    66.66% {
+        opacity: 0;
+        transform: translate3d(-50px, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.section.active .fadeInLeft-delay-1400 {
+    animation-name: fadeInLeft-delay-1400;
+    animation-duration: 2.1s;
+}
+
+@keyframes fadeInLeft-delay-1700 {
+    0% {
+        opacity: 0;
+        transform: translate3d(-50px, 0, 0);
+    }
+    70.83% {
+        opacity: 0;
+        transform: translate3d(-50px, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.section.active .fadeInLeft-delay-1700 {
+    animation-name: fadeInLeft-delay-1700;
+    animation-duration: 2.4s;
+}
+
+@keyframes fadeInRight-delay-800 {
+    0% {
+        opacity: 0;
+        transform: translate3d(50px, 0, 0);
+    }
+    53.33% {
+        opacity: 0;
+        transform: translate3d(50px, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.section.active .fadeInRight-delay-800 {
+    animation-name: fadeInRight-delay-800;
+    animation-duration: 1.5s;
+}
+
+@keyframes fadeInRight-delay-1100 {
+    0% {
+        opacity: 0;
+        transform: translate3d(50px, 0, 0);
+    }
+    61.11% {
+        opacity: 0;
+        transform: translate3d(50px, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.section.active .fadeInRight-delay-1100 {
+    animation-name: fadeInRight-delay-1100;
+    animation-duration: 1.8s;
+}
+
+@keyframes fadeInRight-delay-1400 {
+    0% {
+        opacity: 0;
+        transform: translate3d(50px, 0, 0);
+    }
+    66.66% {
+        opacity: 0;
+        transform: translate3d(50px, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.section.active .fadeInRight-delay-1400 {
+    animation-name: fadeInRight-delay-1400;
+    animation-duration: 2.1s;
+}
+
 @keyframes bouncingUp {
     0% {
         transform: translate3d(0, 0, 0);
