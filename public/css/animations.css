@@ -1,6 +1,18 @@
 /* Fade time: 0.7s */
 /* Animation duration = 0.7 + delay time */
 /* Start percentage = delay time / animation duration */
+@keyframes particles-fadeIn {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -60,6 +72,11 @@
     }
 }
 
+.section.active .particles-fadeIn {
+    animation-name: particles-fadeIn;
+    animation-duration: 2.0s;
+}
+
 .section.active .fadeInUp-delay-500 {
     animation-name: fadeInUp-delay-500;
     animation-duration: 1.2s;
@@ -103,6 +120,26 @@
 .section.active .fadeInUp-delay-1100 {
     animation-name: fadeInUp-delay-1100;
     animation-duration: 1.8s;
+}
+
+@keyframes fadeInDown-delay-800 {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -50px, 0);
+    }
+    53.33% {
+        opacity: 0;
+        transform: translate3d(0, -50px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.section.active .fadeInDown-delay-800 {
+    animation-name: fadeInDown-delay-800;
+    animation-duration: 1.5s;
 }
 
 @keyframes fadeInLeft-delay-500 {
@@ -263,6 +300,46 @@
 .section.active .fadeInRight-delay-1400 {
     animation-name: fadeInRight-delay-1400;
     animation-duration: 2.1s;
+}
+
+@keyframes fadeInRight-delay-1700 {
+    0% {
+        opacity: 0;
+        transform: translate3d(50px, 0, 0);
+    }
+    70.83% {
+        opacity: 0;
+        transform: translate3d(50px, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.section.active .fadeInRight-delay-1700 {
+    animation-name: fadeInRight-delay-1700;
+    animation-duration: 2.4s;
+}
+
+@keyframes fadeInRight-delay-2000 {
+    0% {
+        opacity: 0;
+        transform: translate3d(50px, 0, 0);
+    }
+    74.07% {
+        opacity: 0;
+        transform: translate3d(50px, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.section.active .fadeInRight-delay-2000 {
+    animation-name: fadeInRight-delay-2000;
+    animation-duration: 2.7s;
 }
 
 @keyframes bouncingUp {

@@ -34,6 +34,10 @@ a:active {
     margin: 0;
 }
 
+.row {
+    margin: 0;
+}
+
 /* Site Header */
 .site-header {
     position: absolute;
@@ -42,7 +46,7 @@ a:active {
 }
 
 .site-header .site-logo {
-    padding: 20px;
+    padding: 15px;
     visibility: hidden;
     opacity: 0;
     transition: 0.5s all ease-in-out;
@@ -54,8 +58,8 @@ a:active {
 }
 
 .site-header .site-logo img {
-    object-fit: cover;
-    width: 100px;
+    object-fit: contain;
+    height: 100%;
 }
 
 .site-header .nav #menu {
@@ -65,6 +69,7 @@ a:active {
     align-items: center;
     width: 100%;
     padding: 0;
+    margin: 0;
     
     font: 16px 'Roboto Condensed', sans-serif;
 }
@@ -88,7 +93,7 @@ a:active {
 .site-header .nav #menu li:after {
     content: '';
     display: block;
-    border-bottom: 2px solid #2A2A2A;
+    border-bottom: 2px solid #E85A4F;
     width: 0;
     position: absolute;
     left: 0;
@@ -110,13 +115,41 @@ a:active {
     transition-duration: 0.5s;
 }
 
+.prompt-arrow {
+    position: relative;
+    width: 30px;
+    opacity: 0.3;
+    margin: 0 auto;
+    transition: opacity 0.3s;
+}
+
+.prompt-arrow img {
+    object-fit: cover;
+    width: 100%;
+}
+
 /* Section About */
+#section-about {
+    /* background: url('https://media.giphy.com/media/xT9IgN8YKRhByRBzMI/giphy.gif');
+    background-size: cover;
+    background-position: center; */
+}
+
+#section-about #particles-js canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
 #section-about .logo {
     display: flex;
     justify-content: center;
     align-items: center;
 
     margin: 20px 0 60px;
+
+    pointer-events: none;
 }
 
 #section-about .logo img {
@@ -128,6 +161,8 @@ a:active {
     padding: 0 20%;
     margin-bottom: 30px;
     line-height: 1.5;
+
+    pointer-events: none;
 }
 
 #section-about .introduction .slogan {
@@ -135,12 +170,11 @@ a:active {
 }
 
 #section-about .intro-carousel {
-    padding: 0 30%;
+    margin: 0 30%;
     text-align: center;
 }
 
 #section-about .intro-carousel .intro-carousel-inner {
-    min-height: 320px;
     display: flex;
     align-items: center;
 }
@@ -250,12 +284,9 @@ a:active {
     text-transform: uppercase;
     text-align: center;
     font-weight: 700;
+    color: #E85A4F;
 
     margin: 20px 0 40px;
-}
-
-.section-content {
-    padding: 0 20%;
 }
 
 /* Section Services */
@@ -264,7 +295,7 @@ a:active {
     flex-direction: row;
 }
 
-#section-services .service-list-item:nth-of-type(2n) .header {
+#section-services .service-list-item:nth-of-type(2n + 1) .header {
     order: -1;
     text-align: right;
 }
@@ -276,22 +307,182 @@ a:active {
 }
 
 #section-services .service-list-item .cover img {
-    object-fit: cover;
-    width: 80%;
+    object-fit: contain;
     height: 100%;
+    width: 100%;
 }
 
 #section-services .service-list-item .header {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    border-bottom: 1px solid rgba(42, 42, 42, 0.3);
     padding: 30px 0;
 }
 
 #section-services .service-list-item .header .title {
     font-size: 20px;
     font-weight: 700;
+    color: #E85A4F;
+}
+
+#section-services .service-list-item .header .solutions {
+    font-style: italic;
+}
+
+#section-services .section-content {
+    padding: 0 5%;
+}
+
+/* Section Technology */
+#section-tech .section-content {
+    padding: 0 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-tech .section-content img {
+    object-fit: cover;
+    width: 100%;
+}
+
+#section-tech .section-content .tech-grid-item {
+    padding: 20px;
+}
+
+/* Section Work */
+#section-work .section-content {
+    padding: 0 20%;
+}
+
+#section-work .work-grid .work-grid-item {
+    padding: 15px;
+}
+
+#section-work .work-grid .work-grid-item img.featured {
+    object-fit: cover;
+    width: 100%;
+    border: 1px solid #E98074;
+}
+
+#section-work .work-grid .work-grid-item .project-name {
+    display: block;
+    width: 100%;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 10px;
+    color: #E85A4F;
+}
+
+/* Section Contact */
+#section-contact .section-content {
+    padding: 0 30%;
+}
+
+#section-contact .section-content .prompt-message {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#section-contact .section-content form label {
+    font-weight: 700;
+}
+
+#section-contact .section-content form input,
+#section-contact .section-content form textarea {
+    border: none;
+    border-radius: 0;
+    font-size: 0.8rem;
+    color: #2a2a2a;
+}
+
+#section-contact .section-content form input:focus,
+#section-contact .section-content form textarea:focus {
+    box-shadow: 0 0 0 0.2rem rgba(42, 42, 42, 0.25);
+}
+
+#section-contact .section-content form textarea {
+    resize: none;
+}
+
+#section-contact .section-content form .btn {
+    border: none;
+    border-radius: 0;
+    background: #E85A4F;
+    text-transform: uppercase;
+    font-weight: 700;
+    float: right;
+}
+
+#section-contact .section-content form .btn i {
+    padding-right: 7px;
+}
+
+/* Work Detail */
+.work-detail {
+    position: absolute;
+    height: 100vh;
+    z-index: 1000;
+    overflow: auto;
+    background: #FFFFFF;
+
+    width: 0;
+    transform: translateY(80%);
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    transition: opacity 0.2s 0.4s, width 0.3s 0.3s, transform 0.3s 0.0s ease-in;
+}
+
+.work-detail.active {
+    transform: translateY(0);
+    width: 100vw;
+    opacity: 1;
+    transition: opacity 0.2s 0.0s, width 0.3s 0.0s, transform 0.5s 0.2s ease-out;
+}
+
+.work-detail .close-button {
+    color: #2A2A2A;
+    position: absolute;
+    right: 0;
+    font-size: 24px;
+    margin: 10px 10px 0 0;
+    opacity: 1;
+}
+
+.work-detail .close-button:hover {
+    opacity: 0.5;
+}
+
+.work-detail .cover {
+    height: 200px;
+}
+
+.work-detail .cover img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.work-detail .detail-content {
+    padding: 0 20%;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.work-detail .detail-content img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.work-detail .detail-content .name {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px 0;
+    color: #E85A4F;
 }
 
 /* Site Footer */
