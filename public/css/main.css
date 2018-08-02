@@ -333,6 +333,11 @@ a:active {
 }
 
 /* Section Technology */
+#section-tech .desc {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 #section-tech .section-content {
     padding: 0 20%;
     display: flex;
