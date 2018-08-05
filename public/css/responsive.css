@@ -5,6 +5,10 @@
 }
 
 @media (max-width: 575px) {
+    body, html {
+        overflow: unset !important;
+    }
+    
     body {
         font-size: 0.8rem;
     }
@@ -29,6 +33,10 @@
     /* Site Main */
     .site-main .section {
         padding: 40px 15px !important;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .section-title {
@@ -40,6 +48,10 @@
     }
 
     /* Section About */
+    #section-about {
+        
+    }
+
     #section-about .logo {
         margin: 20px 0 30px;
     }
@@ -54,7 +66,7 @@
     }
 
     #section-about .intro-carousel {
-        margin: 0 15%;
+        margin: 0;
     }
 
     #section-about .intro-carousel .services .services-item {
@@ -89,6 +101,10 @@
         margin: 0;
     }
 
+    #section-services {
+        overflow: hidden;
+    }
+
     #section-services .service-list-item {
         border-bottom: 1px solid rgba(42, 42, 42, 0.1);
     }
@@ -110,22 +126,17 @@
         font-size: 0.7rem;
     }
 
-    #section-services .section-content .service-list-container {
-        max-height: 70vh;
-        overflow: auto;
-    }
-
     #section-services .section-content {
-        border-top: 1px solid rgba(42, 42, 42, 0.3);
-        border-bottom: 1px solid rgba(42, 42, 42, 0.3);
+        /* border-top: 1px solid rgba(42, 42, 42, 0.3);
+        border-bottom: 1px solid rgba(42, 42, 42, 0.3); */
         padding: 10px 0 !important;
     }
 
     #section-work .work-grid {
         height: 70vh;
         overflow: auto;
-        border-top: 1px solid rgba(42, 42, 42, 0.3);
-        border-bottom: 1px solid rgba(42, 42, 42, 0.3);
+        /* border-top: 1px solid rgba(42, 42, 42, 0.3);
+        border-bottom: 1px solid rgba(42, 42, 42, 0.3); */
         background: #EAE7DC;
     }
 
@@ -151,6 +162,17 @@
     .site-footer .right {
         float: none;
         text-align: center;
+    }
+
+    .contact-button.float {
+        width: 50px;
+        height: 50px;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .contact-button .my-float {
+        margin-top: 17px;
     }
 
     /*  */
@@ -203,10 +225,7 @@
 
 /* Responsive height */
 @media (max-height: 575px) {
-    #section-services .section-content .service-list-container {
-        max-height: 60vh;
-        overflow: auto;
-    }
+    
 }
 
 @media (max-height: 767px) {

@@ -8,15 +8,18 @@ body {
 
 /* Unstyling links */
 a {
+    opacity: 1;
     transition: all 0.2s ease-in-out;
 }
 
 a:link {
     color: unset;
+    opacity: 1;
 }
 
 a:visited {
     color: unset;
+    opacity: 1;
 }
 
 a:hover {
@@ -40,9 +43,14 @@ a:active {
 
 /* Site Header */
 .site-header {
-    position: absolute;
+    position: fixed;
     z-index: 999;
     height: 90px;
+}
+
+.site-header.active {
+    color: #FFFFFF;
+    background: #2A2A2A;
 }
 
 .site-header .site-logo {
@@ -109,6 +117,11 @@ a:active {
 
 .site-main .section {
     padding: 90px 20px;
+    background: #EAE7DC;
+}
+
+.site-main .section:nth-of-type(2n) {
+    background: #D8C3A5;
 }
 
 .pp-easing {
@@ -135,11 +148,20 @@ a:active {
     background-position: center; */
 }
 
+#section-about .pp-tableCell {
+    padding: 30px;
+    vertical-align: top;
+}
+
+#section-about div {
+    z-index: 2;
+}
+
 #section-about #particles-js canvas {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: 0;
 }
 
 #section-about .logo {
@@ -154,6 +176,7 @@ a:active {
 
 #section-about .logo img {
     width: 350px;
+    z-index: 2;
 }
 
 #section-about .introduction {
@@ -170,7 +193,7 @@ a:active {
 }
 
 #section-about .intro-carousel {
-    margin: 0 30%;
+    margin: 0 20%;
     text-align: center;
 }
 
@@ -193,7 +216,7 @@ a:active {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 33.33%;
+    width: 25%;
     padding: 10px;
 
     transition: all 0.2s ease-in-out;
@@ -225,7 +248,7 @@ a:active {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 33.33%;
+    width: 25%;
     padding: 10px;
 
     transition: all 0.2s ease-in-out;
@@ -330,6 +353,12 @@ a:active {
 
 #section-services .section-content {
     padding: 0 5%;
+}
+
+#section-services .service-list-item ul {
+    margin: 0;
+    padding-left: 20px;
+    list-style-type: square;
 }
 
 /* Section Technology */
@@ -492,11 +521,24 @@ a:active {
 
 /* Site Footer */
 .site-footer {
-    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
     z-index: 999;
     bottom: 0;
     padding: 15px;
     font-size: 0.9em;
+    pointer-events: none;
+
+    transition: 0.3s all ease-in-out;
+}
+
+.site-footer.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+
+    transition: 0.3s all ease-in-out;
 }
 
 .site-footer .left {
@@ -511,21 +553,22 @@ a:active {
     font-weight: 700;
 }
 
-.float{
-    position:fixed;
-    width:60px;
-    height:60px;
-    bottom:50px;
-    right:15px;
-    background-color:#0C9;
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
+.contact-button.float {
+    position: fixed;
+    z-index: 999;
+    width: 60px;
+    height: 60px;
+    bottom: 50px;
+    right: 15px;
+    background-color: #0C9;
+    color: #FFFFFF;
+    border-radius: 50px;
+    text-align: center;
     box-shadow: 2px 2px 3px #999;
 }
 
-.my-float{
-    margin-top:22px;
+.contact-button .my-float {
+    margin-top: 22px;
     font-size: 20px;
     color: white;
 }
