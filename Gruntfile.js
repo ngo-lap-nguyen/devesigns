@@ -4,18 +4,22 @@ module.exports = function (grunt) {
     grunt.initConfig({
         postcss: {
             options: {
-              map: true, // inline sourcemaps
-              processors: [
-                require('pixrem')(), // add fallbacks for rem units
-                require('autoprefixer')({browsers: 'last 2 versions'}), // add vendor prefixes
-                require('cssnano')() // minify the result
-              ]
+                map: true, // inline sourcemaps
+                processors: [
+                    require('pixrem')(), // add fallbacks for rem units
+                    require('autoprefixer')({ browsers: 'last 8 versions' }), // add vendor prefixes
+                    require('cssnano')() // minify the result
+                ]
             },
             dist: {
-              src: 'preprocess/css/*.css',
-              dest: 'public/css/'
+                files: [{
+                    cwd: 'preprocess/css/',
+                    src: '*.css',
+                    dest: 'public/css/',
+                    expand: true
+                }]
             }
-          }
+        }
     });
 
     grunt.loadNpmTasks('grunt-postcss');

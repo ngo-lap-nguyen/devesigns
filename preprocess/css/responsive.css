@@ -49,11 +49,11 @@
 
     /* Section About */
     #section-about {
-        
+        justify-content: start;
     }
 
     #section-about .logo {
-        margin: 20px 0 30px;
+        margin: 20px 0;
     }
 
     #section-about .logo img {
@@ -62,7 +62,7 @@
 
     #section-about .introduction {
         padding: 0;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 
     #section-about .intro-carousel {

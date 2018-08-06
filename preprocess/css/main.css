@@ -54,6 +54,7 @@ a:active {
 }
 
 .site-header .site-logo {
+    height: 100%;
     padding: 15px;
     visibility: hidden;
     opacity: 0;
