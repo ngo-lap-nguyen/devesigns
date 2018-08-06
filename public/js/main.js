@@ -21,7 +21,7 @@ $(document).ready(function () {
                 checkSectionLocation(value, docViewTop, docViewBottom);
             });
 
-            if (docViewTop < 10 || docViewBottom >= $(document).height() - 50) {
+            if (docViewTop < 10 || docViewBottom >= $(document).height() - 100) {
                 $('.site-footer').addClass('active');
             } else {
                 $('.site-footer').removeClass('active');
