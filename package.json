@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www nodemon"
+    "start": "node ./bin/www nodemon",
+    "build": "grunt"
   },
   "dependencies": {
     "autoprefixer": "^9.1.0",

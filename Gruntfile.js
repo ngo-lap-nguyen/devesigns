@@ -12,8 +12,8 @@ module.exports = function (grunt) {
               ]
             },
             dist: {
-              src: 'public/css/*.css'
-            //   dest: '...'
+              src: 'preprocess/css/*.css',
+              dest: 'public/css/'
             }
           }
     });
