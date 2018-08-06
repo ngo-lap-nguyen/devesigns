@@ -542,6 +542,15 @@ a:active {
     transition: 0.3s all ease-in-out;
 }
 
+.site-footer div {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.site-footer div:last-of-type {
+    margin-bottom: 0;
+}
+
 .site-footer .left {
     float: left;
 }
@@ -559,8 +568,8 @@ a:active {
     z-index: 999;
     width: 60px;
     height: 60px;
-    bottom: 50px;
-    right: 15px;
+    bottom: 70px;
+    left: 15px;
     background-color: #0C9;
     color: #FFFFFF;
     border-radius: 50px;
@@ -572,4 +581,9 @@ a:active {
     margin-top: 22px;
     font-size: 20px;
     color: white;
+}
+
+#tawkchat-container > iframe {
+    bottom: 0;
+    right: 0;
 }
