@@ -17,8 +17,5 @@
     "pixrem": "^4.0.1",
     "x-frame-options": "^1.0.0"
   },
-  "devDependencies": {
-    "grunt": "^1.0.3",
-    "grunt-postcss": "^0.9.0"
-  }
+  "devDependencies": {}
 }
