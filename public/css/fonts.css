@@ -1,0 +1,23 @@
+.fs-light {
+    font-weight: 300;
+}
+
+.fs-regular {
+    font-weight: 400;
+}
+
+.fs-medium {
+    font-weight: 500;
+}
+
+.fs-semibold {
+    font-weight: 600;
+}
+
+.fs-bold {
+    font-weight: 700;
+}
+
+.fs-extrabold {
+    font-weight: 800;
+}
