@@ -27,38 +27,65 @@
     <!-- Begin Header Section -->
     <header class="site-header">
         <div class="container header-container row">
-            <div class="logo-container col-6 animatedParent animateOnce">
+            <div class="logo-container col-6 no-left-padding animatedParent animateOnce">
                 <div class="logo animated fadeInLeftShort">
                     <a href="/">
                         <img src="/img/logo-long.svg">
                     </a>
                 </div>
             </div>
-            <div class="menu-container col-6 animatedParent animateOnce">
+            <div class="menu-container col-6 no-right-padding animatedParent animateOnce">
                 <div class="menu animated fadeInRightShort">
                     <ul>
-                        <li class="menu-option active">
+                        <li class="menu-option home">
                             <a href="#home">
                                 Home
                             </a>
                         </li>
-                        <li class="menu-option">
+                        <li class="menu-option services">
                             <a href="#services">
                                 Services
                             </a>
                         </li>
-                        <li class="menu-option">
+                        <li class="menu-option work">
                             <a href="#work">
                                 Work
                             </a>
                         </li>
-                        <li class="menu-option">
+                        <li class="menu-option contact">
                             <a href="#contact">
                                 Contact
                             </a>
                         </li>
                     </ul>
                 </div>
+                <div class="menu-mobile-button animated fadeInRightShort">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="menu-mobile">
+                <ul>
+                    <li class="menu-option">
+                        <a href="#home">
+                            Home
+                        </a>
+                    </li>
+                    <li class="menu-option">
+                        <a href="#services">
+                            Services
+                        </a>
+                    </li>
+                    <li class="menu-option">
+                        <a href="#work">
+                            Work
+                        </a>
+                    </li>
+                    <li class="menu-option">
+                        <a href="#contact">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
@@ -67,7 +94,7 @@
     <section class="site-main">
         <section id="home" class="main-section border-01">
             <div class="container row">
-                <div class="col-12 col-md-4" id="home-intro">
+                <div class="col-12 col-md-4 no-left-padding" id="home-intro">
                     <div class="animatedParent animateOnce">
                         <p class="main-line animated fadeInUpShort">
                             We are a young energetic team of <span class="fs-extrabold">developers</span> and <span class="fs-extrabold">designers</span>.
@@ -85,19 +112,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-8" id="home-illust">
+                <div class="col-12 col-md-8 no-right-padding" id="home-illust">
                     <img src="img/header.svg" class="header-front">
                     <img src="img/header-bg.svg" class="header-bg">
                 </div>
             </div>
         </section>
         <section id="services" class="main-section border-02">
-            <div class="container animatedParent animateOnce" data-sequence="300">
-                <div class="section-header left col-12 animated fadeInLeftShort" data-id="1">
+            <div class="container animateOnce" data-sequence="300">
+                <div class="section-header left col-12 animated" data-id="1">
                     Our Services
                 </div>
                 <div class="service-grid row">
-                    <div class="service-grid-item col-6 col-md-4 animated fadeInUpShort" data-id="2">
+                    <div class="service-grid-item col-6 col-md-4 animated" data-id="2">
                         <div class="service-icon">
                             <img src="img/services/ecommerce.svg">
                         </div>
@@ -116,7 +143,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="service-grid-item col-6 col-md-4 animated fadeInUpShort" data-id="3">
+                    <div class="service-grid-item col-6 col-md-4 animated" data-id="3">
                         <div class="service-icon">
                             <img src="img/services/ux-ui.svg">
                         </div>
@@ -125,17 +152,17 @@
                         </div>
                         <div class="service-tags">
                             <p>
-                                Shopify, Wordpress Setup
+                                Website Application
                             </p>
                             <p>
-                                Automation Tools
+                                Landing Page
                             </p>
                             <p>
-                                Shopify Plugins
+                                Logo Design
                             </p>
                         </div>
                     </div>
-                    <div class="service-grid-item col-6 col-md-4 animated fadeInUpShort" data-id="4">
+                    <div class="service-grid-item col-6 col-md-4 animated" data-id="4">
                         <div class="service-icon">
                             <img src="img/services/web-dev.svg">
                         </div>
@@ -144,17 +171,17 @@
                         </div>
                         <div class="service-tags">
                             <p>
-                                Shopify, Wordpress Setup
+                                Fullstack
                             </p>
                             <p>
-                                Automation Tools
+                                Single page
                             </p>
                             <p>
-                                Shopify Plugins
+                                Responsive
                             </p>
                         </div>
                     </div>
-                    <div class="service-grid-item col-6 col-md-4 animated fadeInUpShort" data-id="5">
+                    <div class="service-grid-item col-6 col-md-4 animated" data-id="5">
                         <div class="service-icon">
                             <img src="img/services/android.svg">
                         </div>
@@ -163,17 +190,17 @@
                         </div>
                         <div class="service-tags">
                             <p>
-                                Shopify, Wordpress Setup
+                                Native
                             </p>
                             <p>
-                                Automation Tools
+                                Cross platform
                             </p>
                             <p>
-                                Shopify Plugins
+                                Multi-device Support
                             </p>
                         </div>
                     </div>
-                    <div class="service-grid-item col-6 col-md-4 animated fadeInUpShort" data-id="6">
+                    <div class="service-grid-item col-6 col-md-4 animated" data-id="6">
                         <div class="service-icon">
                             <img src="img/services/crm.svg">
                         </div>
@@ -182,17 +209,11 @@
                         </div>
                         <div class="service-tags">
                             <p>
-                                Shopify, Wordpress Setup
-                            </p>
-                            <p>
-                                Automation Tools
-                            </p>
-                            <p>
-                                Shopify Plugins
+                                CRM Solutions
                             </p>
                         </div>
                     </div>
-                    <div class="service-grid-item col-6 col-md-4 animated fadeInUpShort" data-id="7">
+                    <div class="service-grid-item col-6 col-md-4 animated" data-id="7">
                         <div class="service-icon">
                             <img src="img/services/iot.svg">
                         </div>
@@ -201,13 +222,13 @@
                         </div>
                         <div class="service-tags">
                             <p>
-                                Shopify, Wordpress Setup
+                                Monitoring System
                             </p>
                             <p>
-                                Automation Tools
+                                Microcontroller App
                             </p>
                             <p>
-                                Shopify Plugins
+                                GSM, Lora, ZigBee, ...
                             </p>
                         </div>
                     </div>
@@ -215,11 +236,11 @@
             </div>
         </section>
         <section id="work" class="main-section border-01">
-            <div class="container animatedParent animateOnce row" data-sequence="300">
-                <div class="section-header right col-12 animated fadeInRightShort" data-id="1">
+            <div class="container animateOnce row" data-sequence="300">
+                <div class="section-header right col-12 animated" data-id="1">
                     Our Work
                 </div>
-                <div class="project-detail-carousel-container animated fadeInDownShort col-8 col-md-9" data-id="2">
+                <div class="project-detail-carousel-container animated col-9 no-left-padding" data-id="2">
                     <div id="project-detail-carousel">
                         <div class="carousel-item">
                             <div class="project-name">
@@ -370,7 +391,8 @@
                         <button class="view-detail-button"></button>
                     </div>
                 </div>
-                <div class="project-roulette-container animated fadeInDownShort col-4 col-md-3" data-id="3">
+                <div class="project-roulette-container animated col-3 no-padding" data-id="3">
+                    <div class="project-index">01</div>
                     <div class="roulette-arrow roulette-previous">
                         <i class="arrow up"></i>
                     </div>
@@ -410,33 +432,33 @@
                 </div>
             </div>
             <div id="tech">
-                <div class="container animatedParent animateOnce" data-sequence="200">
-                    <div class="heading animated fadeInUpShort" data-id="1">
+                <div class="container animateOnce" data-sequence="200">
+                    <div class="heading animated" data-id="1">
                         What we use
                     </div>
                     <div class="tech-grid row">
-                        <div class="col-6 col-md-3 animated fadeInUpShort" data-id="2">
+                        <div class="col-6 col-md-3 animated" data-id="2">
                             <img src="img/tech/aws.png">
                         </div>
-                        <div class="col-6 col-md-3 animated fadeInUpShort" data-id="3">
+                        <div class="col-6 col-md-3 animated" data-id="3">
                             <img src="img/tech/django.png">
                         </div>
-                        <div class="col-6 col-md-3 animated fadeInUpShort" data-id="4">
+                        <div class="col-6 col-md-3 animated" data-id="4">
                             <img src="img/tech/firebase.png">
                         </div>
-                        <div class="col-6 col-md-3 animated fadeInUpShort" data-id="5">
+                        <div class="col-6 col-md-3 animated" data-id="5">
                             <img src="img/tech/jenkins.png">
                         </div>
-                        <div class="col-6 col-md-3 animated fadeInUpShort" data-id="6">
+                        <div class="col-6 col-md-3 animated" data-id="6">
                             <img src="img/tech/nodejs.png">
                         </div>
-                        <div class="col-6 col-md-3 animated fadeInUpShort" data-id="7">
+                        <div class="col-6 col-md-3 animated" data-id="7">
                             <img src="img/tech/react.png">
                         </div>
-                        <div class="col-6 col-md-3 animated fadeInUpShort" data-id="8">
+                        <div class="col-6 col-md-3 animated" data-id="8">
                             <img src="img/tech/restful.png">
                         </div>
-                        <div class="col-6 col-md-3 animated fadeInUpShort" data-id="9">
+                        <div class="col-6 col-md-3 animated" data-id="9">
                             <img src="img/tech/iot.png">
                         </div>
                     </div>
@@ -444,11 +466,11 @@
             </div>
         </section>
         <section id="contact" class="main-section">
-            <div class="container animatedParent animateOnce row" data-sequence="300">
-                <div class="section-header left col-12 animated fadeInLeftShort" data-id="1">
+            <div class="container  animateOnce row" data-sequence="300">
+                <div class="section-header left col-12 animated" data-id="1">
                     Contact Us
                 </div>
-                <div class="col-12 col-md-6 contact-form animated fadeInLeftShort" data-id="2">
+                <div class="col-12 col-md-6 contact-form animated" data-id="2">
                     <form>
                         <div class="prompt-mes">
                             Got something on your mind?<br>
@@ -506,10 +528,12 @@
         s0.parentNode.insertBefore(s1,s0);
         })();
     </script> -->
-
+    
     <script src="/lib/js/jquery.min.js"></script>
+    <script src="/lib/js/jquery.appear.js"></script>
     <script src="/lib/js/slick.min.js"></script>
     <script src="/lib/js/css3-animate-it.js"></script>
+    <script src="/lib/js/jquery.nicescroll.min.js"></script>
     <script src="/js/main.js"></script>
     <script src="/js/work.js"></script>
 </body>
