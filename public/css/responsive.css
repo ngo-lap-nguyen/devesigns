@@ -146,13 +146,16 @@
     }
 
     /* Section Work */
+    #work #project-detail-carousel .text-data {
+        height: 70%;
+    }
+    
     #work #project-detail-carousel .project-name {
         font-size: 18px;
-        height: 20%;
     }
 
     #work #project-detail-carousel .project-tags {
-        height: 20%;
+        
     }
 
     #work #project-detail-carousel .project-tags span {
@@ -162,7 +165,7 @@
 
     #work #project-detail-carousel .project-desc {
         font-size: 0.8em;
-        height: 30%;
+        
     }
 
     #work .project-imgs {

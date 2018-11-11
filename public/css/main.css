@@ -403,14 +403,18 @@ a:active {
     height: 100%;
 }
 
+#work #project-detail-carousel .text-data {
+    height: 50%;
+}
+
 #work #project-detail-carousel .project-name {
     font-size: 32px;
     font-weight: 800;
-    height: 10%;
+    margin-bottom: 5px;
 }
 
 #work #project-detail-carousel .project-tags {
-    height: 10%;
+    
 }
 
 #work #project-detail-carousel .project-tags span {
@@ -421,10 +425,11 @@ a:active {
     text-transform: uppercase;
     font-size: 0.8em;
     font-weight: 700;
+    margin-right: 5px;
 }
 
 #work #project-detail-carousel .project-desc {
-    height: 30%;
+    margin-top: 15px;
 }
 
 #work .project-imgs {
@@ -448,6 +453,7 @@ a:active {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    box-shadow: 0 0 2px #333333;
 }
 
 #work .view-detail-container {

@@ -69,39 +69,6 @@ $(document).ready(() => {
         
     })
 
-    // Project roulette
-    $('#project-detail-carousel').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: '#project-roulette',
-        verticalSwiping: true
-    });
-
-    $('#project-roulette').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: '#project-detail-carousel',
-        dots: false,
-        centerMode: true,
-        focusOnSelect: true,
-        vertical: true,
-        verticalSwiping: true,
-        infinite: true,
-        nextArrow: '.roulette-next',
-        prevArrow: '.roulette-previous'
-    });
-
-    // View detail
-    $('#work .view-detail-button').click((e) => {
-        $('#project-detail').addClass('active');
-    })
-
-    $('#project-detail .exit-button').click(() => {
-        $('#project-detail').removeClass('active');
-    })
-
     $('.main-section').attr('data-appear-top-offset', '-' + window.innerHeight / 2 + '');
 
     // On appear
