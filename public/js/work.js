@@ -149,19 +149,38 @@ $(document).ready(function() {
         verticalSwiping: true
     });
 
-    $('#project-roulette').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: '#project-detail-carousel',
-        dots: false,
-        centerMode: true,
-        focusOnSelect: true,
-        vertical: true,
-        verticalSwiping: true,
-        infinite: true,
-        nextArrow: '.roulette-next',
-        prevArrow: '.roulette-previous'
-    });
+    var mq = window.matchMedia("(max-width: 767px)");
+
+    if (mq.matches) {
+        $('#project-roulette').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '#project-detail-carousel',
+            dots: false,
+            centerMode: true,
+            focusOnSelect: true,
+            vertical: false,
+            verticalSwiping: false,
+            infinite: true,
+            nextArrow: '.roulette-next',
+            prevArrow: '.roulette-previous'
+        });
+    }
+    else {
+        $('#project-roulette').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '#project-detail-carousel',
+            dots: false,
+            centerMode: true,
+            focusOnSelect: true,
+            vertical: true,
+            verticalSwiping: true,
+            infinite: true,
+            nextArrow: '.roulette-next',
+            prevArrow: '.roulette-previous'
+        });
+    }
 
     // View detail
     $('#work .view-detail-button').click((e) => {

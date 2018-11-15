@@ -107,6 +107,38 @@
         height: 40%;
     }
 
+    #work .project-detail-carousel-container {
+        height: 300px;
+        padding: 0;
+        margin: 0;
+        order: 2;
+    }
+
+    #work .project-roulette-container {
+        order: 1;
+        margin-bottom: 10px;
+    }
+
+    #work .roulette-arrow {
+        display: none !important;
+    }
+
+    #work .project-index {
+        width: 80px;
+        height: 80px;
+        padding-left: 0;
+        padding-top: 25px;
+        bottom: 0;
+        left: 50%;
+        top: unset;
+        transform: translate(-50%, 50%);
+        justify-content: center;
+    }
+
+    #work .view-detail-container {
+        right: 0;
+    }
+
     /* Section Contact */
     #contact {
         padding-bottom: 0;
