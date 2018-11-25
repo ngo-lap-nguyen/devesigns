@@ -389,10 +389,10 @@ a:active {
 
 #work #project-detail-carousel {
     padding: 30px;
-    background: #1D97D3;
+    background: rgba(0, 123, 184, 0.1);
     height: 100%;
     border-radius: 5px;
-    outline: 2px dashed rgba(255,255,255,0.3);
+    outline: 2px dashed rgba(0, 0, 0, 0.3);
     outline-offset: -20px;
     color: #FFFFFF;
 }
@@ -410,6 +410,7 @@ a:active {
     font-size: 32px;
     font-weight: 800;
     margin-bottom: 5px;
+    color: #000000;
 }
 
 #work #project-detail-carousel .project-tags {
@@ -429,6 +430,7 @@ a:active {
 
 #work #project-detail-carousel .project-desc {
     margin-top: 15px;
+    color: #000000;
 }
 
 #work .project-imgs {
@@ -523,9 +525,9 @@ a:active {
 
 #work #project-roulette {
     border-radius: 5px;
-    background: #007BB8;
+    background: #F2F2F2;
     padding: 20px 15px;
-    outline: 2px dashed rgba(255,255,255,0.3);
+    outline: 2px dashed rgba(0, 0, 0, 0.3);
     outline-offset: -20px;
 }
 
@@ -536,7 +538,7 @@ a:active {
     padding-left: 20px;
     font-size: 24px;
     font-weight: 800;
-    color: #FFFFFF;
+    color: rgba(0, 0, 0, 0.3);
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -544,7 +546,7 @@ a:active {
     height: 100px;
     border-radius: 50%;
     left: 0;
-    background: #007BB8;
+    background: #F2F2F2;
 }
 
 #work .roulette-item {
@@ -596,7 +598,7 @@ a:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #007BB8;
+    background: #F2F2F2;
     border-radius: 30px;
     cursor: pointer;
 }
@@ -614,7 +616,7 @@ a:active {
 }
 
 #work i.arrow {
-    border: solid white;
+    border: solid rgba(0, 0, 0, 0.3);
     border-width: 0 5px 5px 0;
     display: inline-block;
     padding: 5px;
