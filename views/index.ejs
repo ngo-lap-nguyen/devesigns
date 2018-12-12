@@ -306,12 +306,12 @@
             </div>
         </section>
         <section id="contact" class="main-section">
-            <div class="container  animateOnce row" data-sequence="300">
+            <div class="container animateOnce row" data-sequence="300">
                 <div class="section-header left col-12 animated" data-id="1">
                     Contact Us
                 </div>
                 <div class="col-12 col-md-6 contact-form animated" data-id="2">
-                    <form>
+                    <form id="contact-form">
                         <div class="prompt-mes">
                             Got something on your mind?<br>
                             Drop us a line and we will help you to the best of our ability!
@@ -320,12 +320,13 @@
                             <input type="name" class="form-control" id="contactName" aria-describedby="nameHelp" placeholder="Your name">
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" id="contactEmail" aria-describedby="emailHelp" placeholder="Your email">
+                            <input type="email" required class="form-control" id="contactEmail" aria-describedby="emailHelp" placeholder="Your email">
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" id="contactMessage" rows="5" placeholder="Tell us what you're thinking about!"></textarea>
+                            <textarea class="form-control" required id="contactMessage" rows="5" placeholder="Tell us what you're thinking about!"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
+                        <div class="status"></div>
                     </form>
                 </div>
                 <div class="col-12 col-md-6 contact-illust">

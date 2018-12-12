@@ -763,6 +763,31 @@ a:active {
     background: #007BB8;
 }
 
+#contact-form button[type="submit"] {
+    transition: opacity 0.3s ease-in-out;
+}
+
+#contact-form button[type="submit"].submitting {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+#contact-form .status {
+    margin-top: 10px;
+    font-weight: 700;
+    color: #007BB8;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#contact-form .status.active {
+    opacity: 1;
+}
+
+#contact-form .status.failure {
+    color: #EB5F5F;
+}
+
 /* Footer */
 .site-footer {
     padding: 45px 0;
