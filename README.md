@@ -13,3 +13,7 @@
     ```
     vi filename
     ```
+- After editing file, save file, run this command to update restart server
+    ```
+    pm2 restart 0
+    ```
