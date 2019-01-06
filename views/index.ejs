@@ -262,11 +262,13 @@
                 </div>
             </div>
             <div id="project-detail">
-                <div class="exit-button">
-                    X
-                </div>
-                <div class="project-detail-container">
-
+                <div class="pd-container">
+                    <div class="exit-button">
+                        X
+                    </div>
+                    <div class="project-detail-container">
+                    
+                    </div>
                 </div>
             </div>
             <div id="tech">
@@ -304,12 +306,12 @@
             </div>
         </section>
         <section id="contact" class="main-section">
-            <div class="container  animateOnce row" data-sequence="300">
+            <div class="container animateOnce row" data-sequence="300">
                 <div class="section-header left col-12 animated" data-id="1">
                     Contact Us
                 </div>
                 <div class="col-12 col-md-6 contact-form animated" data-id="2">
-                    <form>
+                    <form id="contact-form">
                         <div class="prompt-mes">
                             Got something on your mind?<br>
                             Drop us a line and we will help you to the best of our ability!
@@ -318,12 +320,13 @@
                             <input type="name" class="form-control" id="contactName" aria-describedby="nameHelp" placeholder="Your name">
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" id="contactEmail" aria-describedby="emailHelp" placeholder="Your email">
+                            <input type="email" required class="form-control" id="contactEmail" aria-describedby="emailHelp" placeholder="Your email">
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" id="contactMessage" rows="5" placeholder="Tell us what you're thinking about!"></textarea>
+                            <textarea class="form-control" required id="contactMessage" rows="5" placeholder="Tell us what you're thinking about!"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
+                        <div class="status"></div>
                     </form>
                 </div>
                 <div class="col-12 col-md-6 contact-illust">
@@ -337,7 +340,12 @@
     <footer class="site-footer">
         <div class="container row">
             <div class="col-6 col-md-4 contact footer-col">
-                dev@devesigns.com - (+84) 796 9831 72
+                <p>
+                    <a href="mailto:dev@devesigns.com">
+                        dev@devesigns.com
+                    </a>
+                    - (+84) 796 9831 72
+                </p>
             </div>
             <div class="col-6 col-md-4 social footer-col">
                 <span>
@@ -374,6 +382,37 @@
     <script src="/lib/js/jquery.nicescroll.min.js"></script>
     <script src="/js/main.js"></script>
     <script src="/js/work.js"></script>
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <div class="fb-customerchat"
+		 page_id="528512177566816"
+		 minimized="true">
+	</div>
+    <script> 
+    window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '267428990600289',
+          xfbml      : true,
+          version    : 'v3.2'
+        });
+      };
+
+      (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="528512177566816"
+        theme_color="#007BB8">
+    </div>
 </body>
 
 </html>

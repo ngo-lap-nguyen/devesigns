@@ -96,6 +96,34 @@ $(document).ready(() => {
         $('.site-header .menu-option').removeClass('active');
         $('.site-header .menu-option.contact').addClass('active');
     })
+
+    $('#contact-form').submit((event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        
+        $('#contact-form button[type="submit"]').addClass('submitting');
+        $('#contact-form .status').html('Submitting...').addClass('active');
+
+        let contactData = {
+            'name': $('#contactName')[0].value,
+            'email': $('#contactEmail')[0].value,
+            'message': $('#contactMessage')[0].value
+        };
+        
+        $.ajax({
+            type: 'POST',
+            url: '/contact',
+            data: contactData,
+            success: (result) => {
+                console.log(result);
+                resetContactForm('success');
+            },
+            error: (err) => {
+                console.log(err);
+                resetContactForm('failure');
+            }
+        });
+    });
 });
 
 function sleep(ms) {
@@ -106,5 +134,16 @@ async function serviceRemoveAnimation() {
     for (i = 0; i < 6; i++) {
         await sleep(1000);
         $($('.service-grid-item')[i]).removeClass('fadeInUpShort');
+    }
+}
+
+function resetContactForm(status) {
+    $('#contact-form')[0].reset();
+    $('#contact-form button[type="submit"]').removeClass('submitting');
+
+    if (status == 'success') {
+        $('#contact-form .status').html('Thanks for reaching out! We will get back to you as soon as possible!').addClass('success');
+    } else {
+        $('#contact-form .status').html('Sorry, something happened on our end. Please try again!').addClass('failure');
     }
 }

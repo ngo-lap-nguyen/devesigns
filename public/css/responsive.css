@@ -169,6 +169,16 @@
         font-size: 0.8em;
         padding-top: 15px;
     }
+
+    #project-detail .exit-button {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .site-footer .footer-col {
+        font-size: 0.8em;
+    }
 }
 
 @media only screen and (max-width: 575px) {

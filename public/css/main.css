@@ -660,14 +660,21 @@ a:active {
     pointer-events: auto;
 }
 
-#project-detail .project-detail-container {
+#project-detail .pd-container {
     position: absolute;
-    height: 80%;
-    width: 80%;
-    overflow: auto;
+    width: 90%;
+    height: 90%;
+    overflow: visible;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#project-detail .project-detail-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: auto;
     z-index: 1;
     padding: 15px;
     background: #FFFFFF;
@@ -675,16 +682,33 @@ a:active {
 
 #project-detail img {
     width: 100%;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.3));
 }
 
 #project-detail .exit-button {
-    color: #FFFFFF;
     font-size: 24px;
     font-weight: 800;
     position: absolute;
-    top: 10px;
-    right: 20px;
+    top: 0px;
+    right: 0px;
+    transform: translate(50%, -50%);
+    z-index: 999;;
     cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.5));
+    opacity: 0.8;
+    transition: opacity 0.15s ease-in-out;
+}
+
+#project-detail .exit-button:hover {
+    opacity: 1;
 }
 
 #tech {
@@ -737,6 +761,31 @@ a:active {
 
 #contact button {
     background: #007BB8;
+}
+
+#contact-form button[type="submit"] {
+    transition: opacity 0.3s ease-in-out;
+}
+
+#contact-form button[type="submit"].submitting {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+#contact-form .status {
+    margin-top: 10px;
+    font-weight: 700;
+    color: #007BB8;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#contact-form .status.active {
+    opacity: 1;
+}
+
+#contact-form .status.failure {
+    color: #EB5F5F;
 }
 
 /* Footer */

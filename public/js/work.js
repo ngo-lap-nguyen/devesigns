@@ -6,7 +6,7 @@ projects =  [
                         "Front-end Dev",
                         "Responsive Design"
                     ],
-                    "desc": "Cillgold is a company focusing on branding services, logo & UX/UI design.",
+                    "desc": "Cillgold is a company specialized in branding services, logo & UX/UI design. Cillgold focuses on creative and practical concepts too boost their clients' standing in the market.",
                     "images": [
                         "/img/work/cillgold/1.jpg",
                         "/img/work/cillgold/2.jpg",
@@ -30,6 +30,8 @@ projects =  [
                     ],
                     "desc": "Snearker is an online store (trading market) that allows users to buy & sell their own sneakers.",
                     "images": [
+                        "/img/work/sneakers/featured-01.jpg",
+                        "/img/work/sneakers/featured-02.jpg",
                         "/img/work/sneakers/1.jpg"
                     ],
                     "featuredImg": [
@@ -49,6 +51,8 @@ projects =  [
                     ],
                     "desc": "The Honest Shirts is an online T-shirt store that mainly focus on funny & sarcastic graphic.",
                     "images": [
+                        "/img/work/thehonestshirts/featured-01.jpg",
+                        "/img/work/thehonestshirts/featured-02.jpg",
                         "/img/work/thehonestshirts/1.jpg"
                     ],
                     "featuredImg": [
@@ -67,6 +71,8 @@ projects =  [
                     ],
                     "desc": "NPLand Real Estate online site, made possible by Wordpress.",
                     "images": [
+                        "/img/work/muacanho/featured-01.jpg",
+                        "/img/work/muacanho/featured-02.jpg",
                         "/img/work/muacanho/1.jpg"
                     ],
                     "featuredImg": [
@@ -77,39 +83,47 @@ projects =  [
                 },
                 {
                     "id": 5,
-                    "name": "NPLand",
+                    "name": "The Jewel Space",
                     "tags": [
-                        "Wordpress",
+                        "Wix",
+                        "E-commerce",
                         "UX-UI Design",
-                        "Responsive Design"
+                        "Logo Design"
                     ],
-                    "desc": "NPLand Real Estate online site, made possible by Wordpress.",
+                    "desc": "An online jewelry store that aims at providing customers with the best personalized rings & necklaces for every occasion.",
                     "images": [
-                        "/img/work/muacanho/1.jpg"
+                        "/img/work/tjs/featured01.jpg",
+                        "/img/work/tjs/featured02.jpg",
+                        "/img/work/tjs/1.jpg",
+                        "/img/work/tjs/2.jpg",
                     ],
                     "featuredImg": [
-                        "/img/work/muacanho/featured-01.jpg",
-                        "/img/work/muacanho/featured-02.jpg"
+                        "/img/work/tjs/featured01.jpg",
+                        "/img/work/tjs/featured02.jpg"
                     ],
-                    "rouletteImg": "/img/work/muacanho/roulette.jpg"
+                    "rouletteImg": "/img/work/tjs/roulette.jpg"
                 },
                 {
                     "id": 6,
-                    "name": "NPLand",
+                    "name": "Personal Portfolio 01",
                     "tags": [
-                        "Wordpress",
                         "UX-UI Design",
-                        "Responsive Design"
+                        "Logo Design",
+                        "Portfolio"
                     ],
-                    "desc": "NPLand Real Estate online site, made possible by Wordpress.",
+                    "desc": "A personal portfolio created in coorporation with the original author. The site adopts a book-style simulation and minimal design.",
                     "images": [
-                        "/img/work/muacanho/1.jpg"
+                        "/img/work/pp/featured01.gif",
+                        "/img/work/pp/featured02.png",
+                        "/img/work/pp/1.png",
+                        "/img/work/pp/2.png",
+                        "/img/work/pp/3.png"
                     ],
                     "featuredImg": [
-                        "/img/work/muacanho/featured-01.jpg",
-                        "/img/work/muacanho/featured-02.jpg"
+                        "/img/work/pp/featured01.gif",
+                        "/img/work/pp/featured02.png"
                     ],
-                    "rouletteImg": "/img/work/muacanho/roulette.jpg"
+                    "rouletteImg": "/img/work/pp/1.png"
                 }
             ];
 
@@ -139,19 +153,19 @@ function workInit() {
 workInit();
 
 $(document).ready(function() {
-    // Project roulette
-    $('#project-detail-carousel').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: '#project-roulette',
-        verticalSwiping: true
-    });
-
     var mq = window.matchMedia("(max-width: 767px)");
 
     if (mq.matches) {
+        // Project roulette
+        $('#project-detail-carousel').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '#project-roulette',
+            verticalSwiping: false
+        });
+
         $('#project-roulette').slick({
             slidesToShow: 3,
             slidesToScroll: 1,
@@ -167,6 +181,16 @@ $(document).ready(function() {
         });
     }
     else {
+        // Project roulette
+        $('#project-detail-carousel').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '#project-roulette',
+            verticalSwiping: true
+        });
+
         $('#project-roulette').slick({
             slidesToShow: 3,
             slidesToScroll: 1,
