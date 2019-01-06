@@ -188,21 +188,21 @@ a:active {
 
 .site-header .menu ul .menu-option a::before {
     content: '';
-    height: 10px;
-    width: 60px;
+    height: 5px;
+    width: 30px;
     background-image: linear-gradient(to right, #3E2F8C, #EB5F5F);
     display: block;
     position: absolute;
-    bottom: -5px;
+    top: -5px;
     opacity: 0;
-    transition: all 0.2s ease-in;
+    transition: all 0.15s ease-in;
 }
 
 .site-header .menu ul .menu-option.active a::before,
 .site-header .menu ul .menu-option:hover a::before {
-    bottom: 0;
+    width: 60px;
     opacity: 1;
-    transition: all 0.2s ease-out;
+    transition: all 0.15s ease-out;
 }
 
 /* Section Home */
